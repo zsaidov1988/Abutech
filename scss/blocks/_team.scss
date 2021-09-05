@@ -1,0 +1,354 @@
+/* =================TEAM SECTION================== */
+
+.team {
+  padding-top: 145px;
+  &__wrapper {
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 488px;
+  }
+
+  &__sup-heading {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #00094A;
+  }
+
+  &__heading {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 61px;
+    color: #00094A;
+  }
+
+  &__text {
+    margin: 0;
+    margin-top: 15px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #00094A;
+    opacity: 0.8;
+  }
+
+  &__avatars {
+    width: 100%;
+    position: relative;
+    height: 455px;
+  }
+
+  &__person {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 0 20px 10px 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &:nth-child(1) {
+      width: 286px;
+      height: 286px;
+      background-image: url(../../img/team/maftun.png);
+      top: -205px;
+      right: 300px;
+    }
+    &:nth-child(2) {
+      width: 231px;
+      height: 251px;
+      background-image: url(../../img/team/sanjar.png);
+      top: -80px;
+      right: 0;
+    }
+    &:nth-child(3) {
+      width: 221px;
+      height: 245px;
+      background-image: url(../../img/team/oyposhsha.png);
+      top: 194px;
+      left: 139px;
+    }
+    &:nth-child(4) {
+      width: 208px;
+      height: 238px;
+      background-image: url(../../img/team/shovkat.png);
+      top: 90px;
+      left: 438px;
+    }
+    &:nth-child(5) {
+      width: 204px;
+      height: 217px;
+      background-image: url(../../img/team/rustam.png);
+      top: 175px;
+      right: 347px;
+    }
+    &:nth-child(6) {
+      width: 218px;
+      height: 220px;
+      background-image: url(../../img/team/alisher.png);
+      top: 229px;
+      right: 57px;
+    }
+  }
+
+  &__name {
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+
+  &__position {
+    margin: 0;
+    margin-top: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+}
+
+@include breakpoint-down (1220px) {
+  .team {
+    &__person {
+      &:nth-child(4) {
+        left: 400px;
+      }
+      &:nth-child(5) {
+        right: 300px;
+      }
+    }
+  }
+}
+
+@include breakpoint-down (1134px) {
+  .team {
+    &__person {
+      &:nth-child(3) {
+        left: 0;
+      }
+      &:nth-child(4) {
+        left: 300px;
+      }
+      &:nth-child(5) {
+        right: 280px;
+      }
+      &:nth-child(6) {
+        right: 0;
+      }
+    }
+  }
+}
+
+@include breakpoint-down (1066px) {
+  .team {
+    &__person {
+      &:nth-child(1) {
+        top: 0;
+        right: 0;
+      }
+      &:nth-child(2) {
+        top: 50px;
+        right: 50%;
+      }
+      &:nth-child(3) {
+        top: 100px;
+        left: 0;
+      }
+      &:nth-child(4) {
+        top: 400px;
+        left: auto;
+        right: 0;
+      }
+      &:nth-child(5) {
+        top: 450px;
+        left: 50%;
+      }
+      &:nth-child(6) {
+        top: 500px;
+        left: 0;
+      }
+    }
+  }
+}
+
+@include breakpoint-down (932px) {
+  .team {
+    &__person {
+      &:nth-child(2) {
+        top: 50px;
+        right: calc(50% - 100px);
+      }
+      &:nth-child(5) {
+        top: 450px;
+        left: calc(50% - 100px);
+      }
+    }
+  }
+}
+
+@include breakpoint-down (768px) {
+  .team {
+    &__person {
+      &:nth-child(1) {
+        top: 20px;
+        right: 100px;
+      }
+      &:nth-child(2) {
+        top: 700px;
+        right: 100px;
+      }
+      &:nth-child(3) {
+        top: 400px;
+        left: auto;
+        right: 150px;
+      }
+      &:nth-child(4) {
+        top: 150px;
+        left: 20px;
+        right: auto;
+      }
+      &:nth-child(5) {
+        top: 500px;
+        left: 20px;
+      }
+      &:nth-child(6) {
+        top: 800px;
+        left: 60px;
+      }
+    }
+  }
+}
+
+@include breakpoint-down (642px) {
+    .team {
+    &__person {
+      &:nth-child(1) {
+        top: 20px;
+        right: 30px;
+      }
+      &:nth-child(2) {
+        top: 700px;
+        right: 50px;
+      }
+      &:nth-child(3) {
+        top: 400px;
+        left: auto;
+        right: 40px;
+      }
+    }
+  }
+}
+
+@include breakpoint-down (564px) {
+  .team {
+    &__person {
+      &:nth-child(1) {
+        z-index: 5;
+        top: 26px;
+        right: 0;
+      }
+      &:nth-child(2) {
+        z-index: 6;
+        top: 650px;
+        right: 0;
+      }
+      &:nth-child(3) {
+        top: 350px;
+        right: 30px;
+      }
+      &:nth-child(4) {
+        top: 200px;
+        left: 0;
+      }
+      &:nth-child(5) {
+        top: 500px;
+        left: 0;
+      }
+      &:nth-child(6) {
+        top: 800px;
+        left: 4px;
+      }
+    }
+  }
+}
+
+@include breakpoint-down (496px) {
+  .team {
+    &__person {
+      padding: 5px;
+      &:nth-child(1) {
+        width: 182px;
+        height: 182px;
+        top: 26px;
+        right: 0;
+      }
+      &:nth-child(2) {
+        width: 179px;
+        height: 208px;
+        top: 401px;
+        right: 0;
+      }
+      &:nth-child(3) {
+        width: 122px;
+        height: 135px;
+        top: 241px;
+        right: 30px;
+      }
+      &:nth-child(4) {
+        width: 147px;
+        height: 167px;
+        top: 143px;
+        left: 0;
+      }
+      &:nth-child(5) {
+        width: 124px;
+        height: 132px;
+        top: 335px;
+        left: 0;
+      }
+      &:nth-child(6) {
+        width: 149px;
+        height: 206px;
+        top: 513px;
+        left: 4px;
+      }
+    }
+      &__name {
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    &__position {
+      font-size: 10px;
+      line-height: 12px;
+    }
+  }
+}
+
+@include breakpoint-down (350px) {
+  .team {
+    &__person {
+      &:nth-child(4) {
+        top: 200px;
+        left: 0;
+      }
+      &:nth-child(5) {
+        top: 400px;
+        left: 0;
+      }
+      &:nth-child(6) {
+        top: 600px;
+        left: 4px;
+      }
+    }
+  }
+}

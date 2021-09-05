@@ -1,0 +1,148 @@
+
+.offer {
+  padding-top: 80px;
+  &__wrapper {
+  }
+
+  &__sup-heading {
+    margin: 0;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #00094A;
+    text-transform: uppercase;
+  }
+
+  &__heading {
+    margin: 0;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 61px;
+    color: #00094A;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    @include list-unstyled;
+    width: 100%;
+    max-width: 1014px;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: 298px;
+    height: 373px;
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    margin-bottom: 60px;
+    padding-top: 60px;
+    padding-right: 24px;
+    padding-left: 24px;
+    transition: box-shadow 0.3s ease;
+    &:hover{
+      box-shadow: 0px 0px 0px 3px rgba(7, 50, 90, 0.1);
+    }
+    &::before{
+      display: block;
+      width: 100px;
+      height: 100px;
+      margin-left: auto;
+      margin-right: auto;
+      content: "";
+      background-color: #ffffff;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    &:nth-child(1)::before{
+      background-image: url(../../img/proggram.png);
+    }
+    &:nth-child(2)::before{
+      background-image: url(../../img/ux-ui.png);
+    }
+    &:nth-child(3)::before{
+      background-image: url(../../img/smm.png);
+    }
+    &:nth-child(4)::before{
+      background-image: url(../../img/brand.png);
+    }
+    &:nth-child(5)::before{
+      background-image: url(../../img/production.png);
+    }
+    &:nth-child(6)::before{
+      background-image: url(../../img/design.png);
+    }
+  }
+
+  &__item-title {
+    margin: 0;
+    height: 64px;
+    margin-top: 24px;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    color: #00094A;
+  }
+
+  &__item-text {
+    margin: 0;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #00094A;
+  }
+}
+
+@include breakpoint-down (1000px) {
+  .offer {
+  padding-top: 63px;
+
+    &__sup-heading {
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    &__heading {
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    &__list {
+      width: auto;
+      margin-top: 33px;
+      flex-wrap: nowrap;
+      overflow: scroll;
+    }
+
+    &__item {
+      width: 238px;
+      height: 291px;
+      border-radius: 3px;
+      margin-bottom: 0;
+      margin-right: 20px;
+      padding-top: 25px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    &__item-title {
+      font-size: 16px;
+      line-height: 22px;
+      height: 44px;
+    }
+
+    &__item-text {
+      width: 196px;
+    }
+  }
+}

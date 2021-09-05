@@ -1,0 +1,122 @@
+/* ================INTRO SECTION====================== */
+
+.intro {
+  background-image: url(../../img/banner-home.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__wrapper {
+    padding-top: 195px;
+    padding-bottom: 56px;
+  }
+
+  &__content {
+    max-width: 470px;
+  }
+
+  &__heading {
+    margin: 0;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 43px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  &__text {
+    margin-top: 7px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+
+  &__video-btn {
+    width: 206px;
+    padding-top: 14px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    background-color: #00094A;
+    border-radius: 3px;
+    position: relative;
+  }
+
+  &__video-text {
+    margin: 0;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  &__play-outer-circle {
+    width: 71px;
+    height: 71px;
+    border: 0.2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    position: absolute;
+    right: -11px;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__play-inner-circle {
+    width: 49px;
+    height: 49px;
+    border: 0.5px solid #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__video-link {
+    display: block;
+    width: 27px;
+    height: 27px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+@include breakpoint-down (450px) {
+  .intro {
+    &__wrapper {
+      padding-top: 332px;
+      padding-bottom: 30px;
+    }
+
+    &__heading {
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    &__text {
+      margin-top: 8px;
+      margin-bottom: 31px;
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    &__video-btn {
+      width: 180px;
+    }
+
+    &__play-outer-circle {
+      border: none;
+    }
+
+    &__play-inner-circle {
+      border: none;
+    }
+  }
+}

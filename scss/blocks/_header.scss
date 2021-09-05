@@ -1,0 +1,134 @@
+
+/* =======================HEADER========================= */
+
+.header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo-link {
+    @include link-unstyled;
+  }
+
+  &__logo-img {
+    width: 126px;
+    height: 28px;
+  }
+
+  &__right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  &__phone-link {
+    @include link-unstyled;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #00094A;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+  }
+
+  &__phone-img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  &__separator {
+    width: 1px;
+    height: 22px;
+    background-color: #00094A;
+    margin-right: 30px;
+  }
+
+  &__lang-switch {
+    @include link-unstyled;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #00094A;
+    margin-right: 33px;
+    & span {
+      margin-right: 6px;
+    }
+  }
+
+  &__order {
+    @include link-unstyled;
+    background: #00094A;
+    border-radius: 3px;
+    padding: 14px 28px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-right: 30px;
+  }
+
+  &__menu-btn {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #00094A;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  &__menu-img {
+    width: 17px;
+    height: 11px;
+    margin-left: 10px;
+  }
+}
+
+@include breakpoint-down (750px) {
+  .header {
+    &__separator {
+      display: none;
+    }
+
+    &__lang-switch {
+      display: none;
+    }
+  }
+}
+
+@include breakpoint-down (640px) {
+  .header {
+    &__order {
+      display: none;
+    }
+  }
+}
+
+@include breakpoint-down (450px) {
+  .header {
+    padding-top: 23px;
+    padding-bottom: 23px;
+
+    &__logo-img {
+      width: 100px;
+      height: 22px;
+    }
+
+    &__phone-link {
+      display: none;
+    }
+  }
+}
