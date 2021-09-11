@@ -1,0 +1,143 @@
+/* ====================NEW SECTION======================= */
+
+.new {
+  padding-top: 50px;
+  &__wrapper {
+  }
+
+  &__sup-heading {
+    margin: 0;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #00094A;
+    text-transform: uppercase;
+  }
+
+  &__heading {
+    margin: 0;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 61px;
+    color: #00094A;
+    text-transform: uppercase;
+  }
+
+  &__content {
+  }
+
+  &__list {
+    @include list-unstyled;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  &__item {
+    width: 360px;
+  }
+
+  &__item-img {
+    width: 360px;
+    height: 230px;
+  }
+
+  &__calendar {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-top: 25px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #00094A;
+    opacity: 0.2;
+    &::before {
+      display: block;
+      content: "";
+      margin-right: 5px;
+      margin-top: -2px;
+      width: 14px;
+      height: 14px;
+      background-image: url(../../img/calendar.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #00094A;
+  }
+
+  &__read-more {
+    @include link-unstyled;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #06A39C;
+  }
+
+  &__img-read-more {
+    display: block;
+    margin-left: 8px;
+    margin-top: -2px;
+  }
+}
+
+
+@include breakpoint-down (1160px) {
+  .new {
+    &__list {
+      margin-top: 40px;
+    }
+
+    &__item {
+      width: 277px;
+    }
+
+    &__item-img {
+      width: 277px;
+      height: 198px;
+    }
+
+    &__title {
+      font-size: 14px;
+      line-height: 26px;
+    }
+
+    &__read-more {
+      margin-top: 15px;
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    &__img-read-more {
+      display: block;
+      height: 10px;
+      margin-left: 8px;
+      margin-top: -2px;
+    }
+  }
+}
+
+@include breakpoint-down (884px) {
+  .new {
+    
+  }
+}
+
+@include breakpoint-down (350px) {
+  .new {
+    
+  }
+}
